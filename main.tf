@@ -1,5 +1,5 @@
 resource "local_file" "foo" {
-  count = 2
+  count = 3
   
   content  = "foo ${count.index} ! "
   filename = "${path.module}/foo${count.index}.bar"
