@@ -41,6 +41,21 @@ jobs:
       run  : terraform init
       continue-on-error: true
 
+    - name : Terraform Workspace New
+      id   : new
+      run  : terraform workspace new prod
+      continue-on-error: true
+
+    - name : Terraform Workspace Select
+      id   : select
+      run  : terraform workspace select prod
+      continue-on-error: true
+
+    - name : Terraform Workspace List
+      id   : list
+      run  : terraform workspace list
+      continue-on-error: true
+
     - name : Terraform Validate
       id   : validate
       run  : terraform validate -no-color
