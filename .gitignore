@@ -1,0 +1,7 @@
+.idea
+**/.env
+
+secret/terraform.tfstate
+secret/terraform.tfstate.backup
+secret/.terraform
+secret/.terraform.lock.hcl
