@@ -1,0 +1,10 @@
+.idea
+**/.env
+
+secret/terraform.tfstate
+secret/terraform.tfstate.backup
+secret/.terraform
+secret/.terraform.lock.hcl
+secret/scripts/.github_token
+secret/scripts/.tfe_token
+secret/scripts/payload.json

@@ -4,7 +4,7 @@ terraform {
     organization = "jawn"
 
     workspaces {
-      prefix = "automating-terraform-"
+      name = "automating-terraform"
     }
   }
 }
