@@ -4,9 +4,9 @@ terraform {
   required_version = "~>1.4"
 
   required_providers {
-    tfe = {
-      source  = "hashicorp/tfe"
-      version = "0.43.0"
+    local = {
+      source  = "hashicorp/local"
+      version = "2.4.0"
     }
     github = {
       source  = "integrations/github"
