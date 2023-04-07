@@ -46,6 +46,16 @@ jobs:
       run  : terraform validate -no-color
       continue-on-error: true
 
+    - name : Terraform State Pull
+      id   : pull
+      run  : terraform state pull
+      continue-on-error: true
+
+    - name : Terraform State list
+      id   : list
+      run  : terraform state list
+      continue-on-error: true
+
     - name: Terraform Plan
       id: plan
       if: github.event_name == 'pull_request'
@@ -98,12 +108,6 @@ jobs:
       id   : apply
       if   : github.ref == 'refs/heads/main' && github.event_name == 'push'
       run  : terraform apply --auto-approve
-      continue-on-error: true
-
-    - name : Terraform State Pull
-      id   : pull
-      if   : github.ref == 'refs/heads/main' && github.event_name == 'push'
-      run  : terraform state pull
       continue-on-error: true
 
     - run : ls
