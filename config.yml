@@ -1,0 +1,10 @@
+local_file:
+  first:
+    content: 1
+    filename: ./foo1.bar
+  second:
+    content: 2
+    filename: ./foo2.bar
+  third:
+    content: 3
+    filename: ./foo3.bar
