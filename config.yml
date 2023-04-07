@@ -5,3 +5,6 @@ local_file:
   B:
     content: foo
     filename: ./foo2.bar
+  C:
+    content: foo
+    filename: ./foo3.bar
