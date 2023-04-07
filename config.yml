@@ -1,0 +1,7 @@
+local_file:
+  A:
+    content: foo
+    filename: ./foo1.bar
+  B:
+    content: foo
+    filename: ./foo2.bar

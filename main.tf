@@ -1,6 +1,6 @@
 resource "local_file" "foo" {
-  count = 2
-  
-  content  = "foo ${count.index} ! "
-  filename = "${path.module}/foo${count.index}.bar"
+  for_each = local.resource_context.local_file
+
+  content  = each.value.content
+  filename = each.value.filename
 }
